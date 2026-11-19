@@ -26,13 +26,13 @@ button:active{background:#1b4aa0}
 <script>
 // ================= CONFIGURAÇÃO =================
 var CONFIG = {
-  host:    location.hostname || 'localhost',   // IP/domínio do Mosquitto. Servido pelo PC do broker, já pega sozinho.
-  porta:   9001,                               // porta WebSocket do Mosquitto (broker na nuvem: ex. 8884)
-  ssl:     location.protocol === 'https:',     // true = wss:// (obrigatório se a página estiver em https)
-  caminho: '',                                 // alguns brokers pedem '/mqtt'
-  usuario: '',                                 // deixe '' se o broker aceitar anônimos
-  senha:   '',
-  base:    'casa/ventoinha'                    // mesmo valor de BASE no firmware
+	host:    'z881aa80.ala.us-east-1.emqxsl.com',
+	porta:   8084,
+	ssl:     true,
+	caminho: '/mqtt',
+	usuario: 'painel',
+	senha:   '12345678',
+	base:    'casa/ventoinha'                   // mesmo valor de BASE no firmware
 };
 // ================================================
 
